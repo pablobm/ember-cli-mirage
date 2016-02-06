@@ -22,6 +22,7 @@ export default {
 };
 
 function _shouldUseMirage(env, addonConfig) {
+  console.log('addonConfig', addonConfig);
   let userDeclaredEnabled = typeof addonConfig.enabled !== 'undefined';
   let defaultEnabled = _defaultEnabled(env, addonConfig);
 
